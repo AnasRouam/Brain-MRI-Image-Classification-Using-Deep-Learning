@@ -1,5 +1,0 @@
-# Virtual environment
-GTX1050/GTX/
-
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints/
