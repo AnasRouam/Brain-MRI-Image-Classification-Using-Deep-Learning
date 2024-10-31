@@ -12,15 +12,20 @@
 
 ## Goal of this Forked Repository from strikersps ##
 
-1. **Continue in the develepoment of the model by implementing best practices for multi-class classification to increase the model's precision.**
-2. **Investigate the impact on the models by using:**
+1. **Continue the development of the model by implementing best practices for multi-class classification to increase the model's precision.**
+   - Avoid utilizing measures designed for binary circumstances, such as accuracy and F1-score, when analyzing a multi-class model, as they may not provide comprehensive information.
+   - Choose metrics such as macro- or micro-averaged recall and precision, which take into account all classes and eliminate class imbalance bias.
+   - Use weighted versions of precision, recall, and F1-score for varying class sizes.
+   - Analyze each class's performance using the confusion matrix to better understand model behavior. (Already done by strikersps)
+   - Consider using Cohen's kappa for imbalanced datasets to verify agreement beyond chance.
+   - Employ multiclass log-loss to examine prediction confidence in greater detail.
+3. **Investigate the impact on the models by using:**
    - No augmentation
-   - different augmentation hyperparameteres
-   - Balancing the dataset with real MRI images of brain tumors (If possible)
-2. **Explore the effect of classifying each view of the MRI images: Axial, Sagittal and Coronal**
-   - Each view for itself
-   - 3 views from the same patient
-4. **Determine whether view-specific analysis enhances the model’s learning and classification performance.**
+   - Different augmentation hyperparameters
+   - Balancing the dataset with real MRI images of brain tumors (if possible)
+4. **Explore the effect of classifying each plane of the MRI images: Axial, Sagittal, and Coronal**
+   - Each plane individually
+   - All three planes from the same patient
 
 
 ## About Dataset  
