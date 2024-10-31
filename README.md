@@ -26,6 +26,9 @@
 4. **Explore the effect of classifying each plane of the MRI images: Axial, Sagittal, and Coronal**
    - Each plane individually
    - All three planes from the same patient
+5. **Use CUDA and cuDNN to train the model with my GTX 1050 Ti and compare its performance to Google Colab's Intel Xeon CPU.**
+6. **Develop a front-end interface for users to classify images online using TensorFlow.js and WebGPU.**
+7. **Utilize OpenVINO to optimize the trained model for deployment on various hardware platforms, ensuring improved performance and reduced latency during inference.**
 
 
 ## About Dataset  
